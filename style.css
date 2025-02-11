@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #0ccadc;
+}
+
+.container {
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #e7620a;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background-color: #0bcc28;
+}
+
+.dice-box {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    box-shadow: 2px solid grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .square {
+        width: 80px;
+        height: 80px;
+    }
+
+    .circle {
+        width: 16px;
+        height: 16px;
+        margin: 4px;
+    }
+}
+
+@media (max-width: 480px) {
+    button {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    .square {
+        width: 60px;
+        height: 60px;
+    }
+
+    .circle {
+        width: 12px;
+        height: 12px;
+        margin: 3px;
+    }
+
+    .dice-box {
+        gap: 8px;
+    }
+}
